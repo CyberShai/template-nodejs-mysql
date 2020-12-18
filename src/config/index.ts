@@ -2,7 +2,7 @@ import dotnet from 'dotenv';
 import path from 'path';
 
 // Get env path
-const envPath = path.resolve(__dirname, `${process.env.ENV_FILE_PATH}`);
+const envPath = path.resolve(__dirname, `${ process.env.ENV_FILE_PATH }`);
 
 // Load variables into .env file
 dotnet.config({ path: envPath });
