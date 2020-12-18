@@ -1,0 +1,19 @@
+{
+  "name": "template-nodejs-mysql",
+  "version": "1.0.0",
+  "description": "A template for use a Node.js project with MySql and Jest",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CyberShai/template-nodejs-mysql.git"
+  },
+  "author": "https://github.com/brycatch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CyberShai/template-nodejs-mysql/issues"
+  },
+  "homepage": "https://github.com/CyberShai/template-nodejs-mysql#readme"
+}
