@@ -1,3 +1,7 @@
-import db from "./database";
+import Server from './server';
 
-db.connect();
+const server = Server.instance;
+
+server.init(() => {
+  console.log(`Server running in port ${server.port}`);
+});

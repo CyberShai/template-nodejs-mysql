@@ -14,6 +14,7 @@ const config = {
     user: process.env.MYSQL_USER || "",
     password: process.env.MYSQL_PASSWORD || "",
   },
+  port: Number(process.env.PORT) || 4000
   // test: process.env.CONFIG_TEST || ""
 };
 
