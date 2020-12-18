@@ -1,1 +1,3 @@
-console.log("Hello world");
+import db from "./database";
+
+db.connect();
