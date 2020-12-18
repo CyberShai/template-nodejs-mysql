@@ -17,6 +17,9 @@ import compression from 'compression';
 // database
 import db from '../database';
 
+// Routes
+import routes from "../network/routes.network";
+
 export default class Server {
   public httpServer = new http.Server;
   private static _instance: Server;
@@ -38,6 +41,7 @@ export default class Server {
   public init(cb: any) {
     this.setEncoded();
     this.setDatabase();
+    this.setRoutes();
     this.setCors();
     this.setPublicFolder();
     this.setCompression();
@@ -46,6 +50,10 @@ export default class Server {
 
   private setDatabase() {
     db.getPool();
+  }
+
+  private setRoutes() {
+    routes(this.app);
   }
 
   private setEncoded() {
